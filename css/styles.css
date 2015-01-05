@@ -77,23 +77,26 @@ body {
   width: 100%;
   min-height: 100px;
   display: inline-block;
+  margin: 5px 0;
 }
 
-/* line 29, ../sass/_base.scss */
+/* line 30, ../sass/_base.scss */
 .section-header {
-  line-height: 55px;
   width: 100%;
-  padding: 0  0 10px 0;
+  padding: 30px;
   text-align: center;
   border-bottom: 1px solid #dfdfdf;
   color: #666666;
   font-size: 1.1em;
+  font-size: 1.3em;
+  font-weight: 700;
+  background-color: #f9f9f9;
 }
 
-/* line 36, ../sass/_base.scss */
+/* line 39, ../sass/_base.scss */
 .home {
-  min-height: 0px;
-  height: 0px;
+  min-height: 50px;
+  height: 50px;
 }
 
 /* line 1, ../sass/_header.scss */
@@ -104,50 +107,57 @@ body {
 .header .logo {
   margin: 75px auto 0 auto;
   width: 100%;
+  max-width: 700px;
+  min-width: 300px;
   text-align: center;
 }
-/* line 8, ../sass/_header.scss */
+/* line 9, ../sass/_header.scss */
+.header .logo img {
+  width: 100%;
+}
+/* line 13, ../sass/_header.scss */
 .header .logo-small {
   width: 9.375em;
 }
-/* line 11, ../sass/_header.scss */
+/* line 16, ../sass/_header.scss */
 .header .nav_wrapper {
+  transition: top 0.2s ease-in-out;
   width: 100%;
   text-align: center;
   padding-top: 5px;
 }
-/* line 15, ../sass/_header.scss */
+/* line 21, ../sass/_header.scss */
 .header .nav_wrapper .logo-small {
   display: none;
 }
-/* line 18, ../sass/_header.scss */
+/* line 24, ../sass/_header.scss */
 .header .nav_wrapper.fxd {
   border-bottom: 1px solid #000;
   background: #FFF;
   z-index: 10000;
 }
-/* line 22, ../sass/_header.scss */
+/* line 28, ../sass/_header.scss */
 .header .nav_wrapper.fxd .logo-small {
   display: inline-block;
 }
-/* line 28, ../sass/_header.scss */
+/* line 34, ../sass/_header.scss */
 .header .nav {
   display: inline-block;
 }
-/* line 31, ../sass/_header.scss */
+/* line 37, ../sass/_header.scss */
 .header .nav li {
   float: left;
   margin-left: 15px;
   line-height: 45px;
   text-transform: uppercase;
 }
-/* line 36, ../sass/_header.scss */
+/* line 42, ../sass/_header.scss */
 .header .nav li a {
   text-decoration: none;
   font-size: .9em;
   color: #666666;
 }
-/* line 40, ../sass/_header.scss */
+/* line 46, ../sass/_header.scss */
 .header .nav li a:hover, .header .nav li a.active {
   border-bottom: 4px solid #333;
 }
@@ -371,40 +381,59 @@ body {
   width: 100%;
   background-color: #FEE7D7;
   display: inline-block;
-  padding: 15px 0;
+  padding: 30px;
+}
+/* line 6, ../sass/_contact.scss */
+.contact-wrap p {
+  line-height: 1.5em;
 }
 
-/* line 7, ../sass/_contact.scss */
+/* line 10, ../sass/_contact.scss */
 .contact-content {
   max-width: 900px;
   width: 100%;
   margin: 0 auto;
   padding: 15px;
+  color: #666;
 }
-/* line 13, ../sass/_contact.scss */
+/* line 16, ../sass/_contact.scss */
+.contact-content a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid #666;
+}
+/* line 20, ../sass/_contact.scss */
+.contact-content a:hover {
+  color: #333;
+}
+/* line 25, ../sass/_contact.scss */
 .contact-content .left {
   float: left;
   max-width: 500px;
 }
-/* line 17, ../sass/_contact.scss */
+/* line 29, ../sass/_contact.scss */
 .contact-content .right {
   float: left;
 }
 
-/* line 22, ../sass/_contact.scss */
+/* line 34, ../sass/_contact.scss */
 .contact-info {
   display: inline-block;
   margin-top: 15px;
 }
-/* line 26, ../sass/_contact.scss */
+/* line 38, ../sass/_contact.scss */
+.contact-info .contact-method {
+  display: inline-block;
+}
+/* line 41, ../sass/_contact.scss */
 .contact-info .hours, .contact-info .contact_us {
   float: left;
 }
-/* line 28, ../sass/_contact.scss */
+/* line 43, ../sass/_contact.scss */
 .contact-info .hours li, .contact-info .contact_us li {
   padding: 5px 0;
 }
-/* line 33, ../sass/_contact.scss */
+/* line 48, ../sass/_contact.scss */
 .contact-info .contact_us {
   margin-left: 15px;
 }
@@ -418,25 +447,26 @@ body {
 }
 /* line 8, ../sass/_faq.scss */
 .faq > ul {
+  padding: 30px;
   max-width: 756px;
   text-align: left;
   width: 100%;
   margin: 30px auto;
 }
-/* line 13, ../sass/_faq.scss */
+/* line 14, ../sass/_faq.scss */
 .faq > ul > li {
   margin: 15px 0;
 }
-/* line 18, ../sass/_faq.scss */
+/* line 19, ../sass/_faq.scss */
 .faq p {
   line-height: 1.5em;
 }
-/* line 22, ../sass/_faq.scss */
+/* line 23, ../sass/_faq.scss */
 .faq .inline-list {
   list-style: disc;
   margin-left: 30px;
 }
-/* line 25, ../sass/_faq.scss */
+/* line 26, ../sass/_faq.scss */
 .faq .inline-list li {
   margin: 5px 0;
   line-height: 1.5em;
