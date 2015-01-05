@@ -1,10 +1,17 @@
 .order {
     padding-top: 30px;
 }
+
+.pricing {
+    padding: 30px 0;
+}
 .pricing-levels {
     width: 100%;
-    display: inline-block;
+    display: block;
     padding: 5px;
+    max-width: 700px;
+    margin: 0 auto;
+    clear: both;
 
     .tier {
         @include header_styling();
@@ -38,8 +45,12 @@
 }
 .pricing-table-wrap {
     padding: 5px;
+    display: block;
+    clear: both;
     .pricing-table {
         width: 100%;
+        max-width: 756px;
+        margin: 0 auto;
     }    
     @import "table";
 }

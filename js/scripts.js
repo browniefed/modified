@@ -59,7 +59,6 @@
     var didScroll;
     var lastScrollTop = 0;
     var delta = 5;
-    var navbarHeight = $('.nav_wrapper').outerHeight();
 
     $(window).scroll(function(event){
         didScroll = true;
@@ -81,9 +80,9 @@
         
         // If they scrolled down and are past the navbar, add class .nav-up.
         // This is necessary so you never see what is "behind" the navbar.
-        if (st > lastScrollTop && st > navbarHeight){
+        if (st > lastScrollTop && st > $('.nav_wrapper').outerHeight()){
             // Scroll Down
-            $('.nav_wrapper').css({top: (navbarHeight * -1) + 'px' })
+            $('.nav_wrapper').css({top: ($('.nav_wrapper').outerHeight() * -1) + 'px' })
         } else {
             // Scroll Up
             if(st + $(window).height() < $(document).height()) {
