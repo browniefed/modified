@@ -3,6 +3,7 @@
 }
 body {
     font-size: 16px;
+    font-family: 'Lato', sans-serif;
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
@@ -30,4 +31,9 @@ body {
     width: 100%;
     padding: 0  0 10px 0;
     @include header_styling();
+}
+
+.home {
+    min-height: 0px;
+    height: 0px;
 }

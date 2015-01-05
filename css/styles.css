@@ -63,22 +63,23 @@ table {
 /* line 4, ../sass/_base.scss */
 body {
   font-size: 16px;
+  font-family: 'Lato', sans-serif;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* line 9, ../sass/_base.scss */
+  /* line 10, ../sass/_base.scss */
   body {
     font-size: 10px;
   }
 }
-/* line 22, ../sass/_base.scss */
+/* line 23, ../sass/_base.scss */
 .section, .header, .footer {
   width: 100%;
   min-height: 100px;
   display: inline-block;
 }
 
-/* line 28, ../sass/_base.scss */
+/* line 29, ../sass/_base.scss */
 .section-header {
   line-height: 55px;
   width: 100%;
@@ -87,6 +88,12 @@ body {
   border-bottom: 1px solid #dfdfdf;
   color: #666666;
   font-size: 1.1em;
+}
+
+/* line 36, ../sass/_base.scss */
+.home {
+  min-height: 0px;
+  height: 0px;
 }
 
 /* line 1, ../sass/_header.scss */
@@ -118,30 +125,29 @@ body {
   border-bottom: 1px solid #000;
   background: #FFF;
   z-index: 10000;
-  height: 90px;
 }
-/* line 23, ../sass/_header.scss */
+/* line 22, ../sass/_header.scss */
 .header .nav_wrapper.fxd .logo-small {
   display: inline-block;
 }
-/* line 29, ../sass/_header.scss */
+/* line 28, ../sass/_header.scss */
 .header .nav {
   display: inline-block;
 }
-/* line 32, ../sass/_header.scss */
+/* line 31, ../sass/_header.scss */
 .header .nav li {
   float: left;
   margin-left: 15px;
   line-height: 45px;
   text-transform: uppercase;
 }
-/* line 37, ../sass/_header.scss */
+/* line 36, ../sass/_header.scss */
 .header .nav li a {
   text-decoration: none;
   font-size: .9em;
   color: #666666;
 }
-/* line 41, ../sass/_header.scss */
+/* line 40, ../sass/_header.scss */
 .header .nav li a:hover, .header .nav li a.active {
   border-bottom: 4px solid #333;
 }
@@ -173,21 +179,32 @@ body {
 }
 /* line 18, ../sass/_order.scss */
 .pricing-levels .tier:hover, .pricing-levels .tier.selected {
-  border-bottom: 4px solid #dfdfdf;
+  border-bottom: 4px solid #1caeae;
+  background-color: #d1f8f8;
 }
 
-/* line 24, ../sass/_order.scss */
+/* line 25, ../sass/_order.scss */
 .order-form {
-  padding: 15px 30px;
+  padding: 60px;
   font-size: 1.1em;
-  font-family: 'GillSans', Arial, sans-serif;
+  background-color: #31383c;
+  color: #FFF;
+}
+/* line 31, ../sass/_order.scss */
+.order-form p {
+  line-height: 1.5em;
+}
+/* line 34, ../sass/_order.scss */
+.order-form .phone-number {
+  color: #FFF;
+  margin: 0 10px;
 }
 
-/* line 29, ../sass/_order.scss */
+/* line 39, ../sass/_order.scss */
 .pricing-table-wrap {
   padding: 5px;
 }
-/* line 31, ../sass/_order.scss */
+/* line 41, ../sass/_order.scss */
 .pricing-table-wrap .pricing-table {
   width: 100%;
 }
@@ -300,35 +317,53 @@ body {
   background: -moz-linear-gradient(top, #f2f2f2, #f0f0f0);
 }
 
-/* line 37, ../sass/_order.scss */
+/* line 47, ../sass/_order.scss */
 .order-questions {
   display: inline-block;
   width: 100%;
   list-style: disc;
   margin: 10px 0;
+  margin-left: 40px;
 }
-/* line 42, ../sass/_order.scss */
+/* line 53, ../sass/_order.scss */
 .order-questions li {
   padding: 5px 0;
+  font-size: .8em;
+  line-height: 1.5em;
 }
 
-/* line 47, ../sass/_order.scss */
+/* line 60, ../sass/_order.scss */
 .order-now {
-  background-color: #007CC3;
-  padding: 6px 14px 6px;
+  background-color: #20C3D0;
   text-decoration: none;
   border: none;
-  font-size: 1.1em;
+  font-size: 1.3em;
   font-family: 'GillSans', Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #FFF;
-  display: inline-block;
+  display: block;
+  margin: 0 auto;
+  padding: 20px 40px;
+  display: block;
+  max-width: 500px;
+  text-align: center;
+}
+/* line 75, ../sass/_order.scss */
+.order-now:hover {
+  background-color: #1caeae;
 }
 
 /* line 1, ../sass/_gallery.scss */
 .gallery {
-  min-height: 800px;
+  min-height: 1000px;
+}
+
+/* line 5, ../sass/_gallery.scss */
+.gallery-images {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 /* line 1, ../sass/_contact.scss */
@@ -354,4 +389,55 @@ body {
 /* line 17, ../sass/_contact.scss */
 .contact-content .right {
   float: left;
+}
+
+/* line 22, ../sass/_contact.scss */
+.contact-info {
+  display: inline-block;
+  margin-top: 15px;
+}
+/* line 26, ../sass/_contact.scss */
+.contact-info .hours, .contact-info .contact_us {
+  float: left;
+}
+/* line 28, ../sass/_contact.scss */
+.contact-info .hours li, .contact-info .contact_us li {
+  padding: 5px 0;
+}
+/* line 33, ../sass/_contact.scss */
+.contact-info .contact_us {
+  margin-left: 15px;
+}
+
+/* line 2, ../sass/_faq.scss */
+.faq h4 {
+  color: #27415a;
+  font-weight: 700;
+  line-height: 1.5em;
+  font-size: 1.3em;
+}
+/* line 8, ../sass/_faq.scss */
+.faq > ul {
+  max-width: 756px;
+  text-align: left;
+  width: 100%;
+  margin: 30px auto;
+}
+/* line 13, ../sass/_faq.scss */
+.faq > ul > li {
+  margin: 15px 0;
+}
+/* line 18, ../sass/_faq.scss */
+.faq p {
+  line-height: 1.5em;
+}
+/* line 22, ../sass/_faq.scss */
+.faq .inline-list {
+  list-style: disc;
+  margin-left: 30px;
+}
+/* line 25, ../sass/_faq.scss */
+.faq .inline-list li {
+  margin: 5px 0;
+  line-height: 1.5em;
 }

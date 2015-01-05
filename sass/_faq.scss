@@ -1,0 +1,30 @@
+.faq {
+    h4 {
+        color: #27415a;
+        font-weight: 700;
+        line-height: 1.5em;
+        font-size: 1.3em;
+    }
+    > ul {
+        max-width: 756px;
+        text-align: left;
+        width: 100%;
+        margin: 30px auto;
+        > li {
+            margin: 15px 0;
+        }
+    }
+
+    p {
+        line-height: 1.5em;
+    }
+
+    .inline-list {
+        list-style: disc;
+        margin-left: 30px;
+        li {
+            margin: 5px 0;
+            line-height: 1.5em;
+        }
+    }
+}

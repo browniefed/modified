@@ -18,3 +18,19 @@
         float: left;
     }
 }
+
+.contact-info {
+    display: inline-block;
+    margin-top: 15px;
+
+    .hours, .contact_us {
+        float: left;
+        li {
+            padding: 5px 0;
+        }
+    }
+
+    .contact_us {
+        margin-left: 15px;
+    }
+}
