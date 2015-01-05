@@ -1,0 +1,46 @@
+.header {
+    text-align: center;
+    .logo {
+        margin: 75px auto 0 auto;
+        width: 100%;
+        text-align: center
+    }
+    .logo-small {
+        width: 9.375em;
+    }
+    .nav_wrapper {
+        width: 100%;
+        text-align: center;
+        padding-top: 5px;
+        .logo-small {
+            display: none;
+        }
+        &.fxd {
+            border-bottom: 1px solid #000;
+            background: #FFF;
+            z-index: 10000;
+            height: 90px;
+            .logo-small {
+                display: inline-block;
+            }
+        }
+
+    }
+    .nav {
+        display: inline-block;
+    }
+    .nav li{
+        float: left;
+        margin-left: 15px;
+        line-height: 45px;
+        text-transform: uppercase;
+        a {
+            text-decoration: none;
+            font-size: .9em;
+            color: #666666;
+            &:hover, &.active {
+                border-bottom: 4px solid #333;
+            }
+        }
+    }
+}

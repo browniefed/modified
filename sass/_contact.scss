@@ -1,0 +1,20 @@
+.contact-wrap {
+    width: 100%;
+    background-color: #FEE7D7;
+    display: inline-block;
+    padding: 15px 0;
+}
+.contact-content {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+
+    .left {
+        float: left;
+        max-width: 500px;
+    }
+    .right {
+        float: left;
+    }
+}

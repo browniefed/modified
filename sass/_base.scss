@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+     body {
+        font-size: 10px;
+     }
+}
+
+
+@mixin header_styling {
+    text-align: center;
+    border-bottom: 1px solid #dfdfdf;
+    color: #666666;
+    font-size: 1.1em;
+}
+
+.section, .header, .footer {
+    width: 100%;
+    min-height: 100px;
+    display: inline-block;
+}
+
+.section-header {
+    line-height: 55px;
+    width: 100%;
+    padding: 0  0 10px 0;
+    @include header_styling();
+}

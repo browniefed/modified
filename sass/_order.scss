@@ -1,0 +1,58 @@
+.order {
+    padding-top: 30px;
+}
+.pricing-levels {
+    width: 100%;
+    display: inline-block;
+    padding: 5px;
+
+    .tier {
+        @include header_styling();
+        border: none;
+        width: 30%;
+        margin-left: 1%;
+        float: left;
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+        &:hover, &.selected {
+            border-bottom: 4px solid #dfdfdf;
+        }
+    }
+}
+
+.order-form {
+    padding: 15px 30px;
+    font-size: 1.1em;
+    font-family: 'GillSans', Arial, sans-serif;
+}
+.pricing-table-wrap {
+    padding: 5px;
+    .pricing-table {
+        width: 100%;
+    }    
+    @import "table";
+}
+
+.order-questions {
+    display: inline-block;
+    width: 100%;
+    list-style: disc;
+    margin: 10px 0;
+    li {
+        padding: 5px 0;
+    }
+}
+
+.order-now {
+    background-color: #007CC3;
+    padding: 6px 14px 6px;
+    text-decoration: none;
+    border: none;
+    font-size: 1.1em;
+    font-family: 'GillSans', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #FFF;
+    display: inline-block;
+}
