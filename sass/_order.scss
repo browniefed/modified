@@ -22,6 +22,7 @@
         display: block;
         cursor: pointer;
         padding: 10px;
+        height: 60px;
         &:hover, &.selected {
             border-bottom: 4px solid #1caeae;
             background-color: #d1f8f8;

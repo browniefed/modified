@@ -80,13 +80,13 @@
         
         // If they scrolled down and are past the navbar, add class .nav-up.
         // This is necessary so you never see what is "behind" the navbar.
-        if (st > lastScrollTop && st > $('.nav_wrapper').outerHeight()){
+        if (st > lastScrollTop && st > $('.nav_wrapper.fxd').outerHeight()){
             // Scroll Down
-            $('.nav_wrapper').css({top: ($('.nav_wrapper').outerHeight() * -1) + 'px' })
+            $('.nav_wrapper').css({top: ($('.nav_wrapper.fxd').outerHeight() * -1) + 'px' })
         } else {
             // Scroll Up
             if(st + $(window).height() < $(document).height()) {
-                $('.nav_wrapper').css({top: 0})
+                $('.nav_wrapper.fxd').css({top: 0})
             }
         }
         
