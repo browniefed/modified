@@ -49,6 +49,9 @@
     padding: 5px;
     display: block;
     clear: both;
+    width: 100%;
+    max-width: 100%;
+    overflow: auto;
     .pricing-table {
         width: 100%;
         max-width: 1000px;
