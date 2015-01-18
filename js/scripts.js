@@ -94,6 +94,6 @@
     }
 
     var typist = document.querySelector("#typist-element");
-    var typistInstance = new Typist(typist,{letterInterval: 30, textInterval: 1500});
+    var typistInstance = new Typist(typist,{letterInterval: 30, textInterval: 750});
 
 }())

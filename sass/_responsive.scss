@@ -1,0 +1,28 @@
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+     body {
+        font-size: 10px;
+     }
+
+     .home p {
+        margin: 0 5%;
+     }
+
+     .section-header {
+        font-size: 3em;
+     }
+     .order-form {
+        padding: 2em;
+     }
+     .order-form p {
+        line-height: 1.5em;
+        margin: 0px;
+        margin-bottom: 15px;
+     }
+     .order-questions {
+        display: inline-block;
+        list-style: disc;
+        margin: 10%;
+        margin-top: 0;
+     }
+}

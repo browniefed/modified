@@ -32,12 +32,13 @@
 
 .order-form {
     padding: 60px;
-    font-size: 1.1em;
+    font-size: 1.5em;
     background-color: #31383c;
     color: #FFF;
 
     p {
         line-height: 1.5em;
+        margin: 0 20% 30px 20%;
     }
     .phone-number {
         color: #FFF;
@@ -50,18 +51,18 @@
     clear: both;
     .pricing-table {
         width: 100%;
-        max-width: 756px;
+        max-width: 1000px;
         margin: 0 auto;
+        font-size: 1.3em;
     }    
     @import "table";
 }
 
 .order-questions {
     display: inline-block;
-    width: 100%;
     list-style: disc;
     margin: 10px 0;
-    margin-left: 40px;
+    margin: 0 25%;
     li {
         padding: 5px 0;
         font-size: .8em;
